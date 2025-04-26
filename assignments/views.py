@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from .models import Warehouse, Agent, Order
-from .serializers import WarehouseSerializer, AgentSerializer, OrderSerializer
+from .serializer import WarehouseSerializer, AgentSerializer, OrderSerializer
 
 class WarehouseViewSet(viewsets.ModelViewSet):
     queryset = Warehouse.objects.all()
